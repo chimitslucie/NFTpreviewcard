@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --White: hsl(0, 0%, 100%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Outfit";
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--mainBG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--cardBG);
+}
+
+.card__img {
+    border-radius: 10px;
+}
+
+.card__content {
+    margin-top: 30px;
+}
+
+.content__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--White);
+    margin-bottom: 20px;
+}
+
+.content__text {
+    color: var(--Softblue);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.card__content--element {
+    display: flex;
+    justify-content: space-between;
+}
+
+.element__eth {
+    display: flex;
+    align-items: center;
+}
+
+.eth__img {
+    max-width: 13px;
+}
+
+.eth__text {
+    margin-left: 5px;
+    color: var(--Cyan);
+}
+
+.element__day {
+    display: flex;
+    align-items: center;
+}
+
+.day__img {
+    max-width: 15px;
+}
+
+.day__text {
+    margin-left: 5px;
+    color: var(--Softblue);
+}
+
+.ligne {
+    color: var(--line);
+}
+
+.card__profil {
+    display: flex;
+    align-items: center;
+}
+
+.profil__img {
+    max-width: 36px;
+    border: 1px solid var(--White);
+    border-radius: 20px;
+}
+
+.profil__text {
+    color: var(--Softblue);
+    margin-left: 15px;
+}
+
+.profil__name {
+    color: var(--White);
+}
+
+@media (max-width:375px) {
+    .card {
+        max-width: 270px;
+    }
+}
